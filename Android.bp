@@ -1,0 +1,21 @@
+android_app {
+  name: "HelloService",
+  aidl: {
+    local_include_dirs: ["src/aidl"],
+  },
+  src: [
+    "src/**/*.java",
+    "src/**/I*.aidl",
+  ],
+  resource_dirs: ["res"],
+  manifest: "AndroidManifest.xml",
+  static_libs: [
+    "services",
+  ],
+  platform_apis: true,
+  priviliged: true,
+  certificate: "platform",
+  optimizi: {
+    enabled: false,
+  },
+}
