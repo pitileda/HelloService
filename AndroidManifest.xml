@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.ihor.helloservice"
+  android:sharedUserId="android.uid.system">
+  <application
+    android:persistent="true"
+    android:exported="true">
+    <service android:name=".HelloService" />
+    <uses-library
+      android:name="com.ihor.helloservice.lib"/>
+  </application>
+</manifest>
+

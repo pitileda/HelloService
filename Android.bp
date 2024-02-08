@@ -3,7 +3,7 @@ android_app {
   aidl: {
     local_include_dirs: ["src/aidl"],
   },
-  src: [
+  srcs: [
     "src/**/*.java",
     "src/**/I*.aidl",
   ],
@@ -13,9 +13,29 @@ android_app {
     "services",
   ],
   platform_apis: true,
-  priviliged: true,
+  privileged: true,
   certificate: "platform",
-  optimizi: {
+  optimize: {
     enabled: false,
   },
+}
+
+java_sdk_library {
+  name: "com.ihor.helloservice.lib",
+  unsafe_ignore_missing_latest_api: true,
+  installable: true,
+  static_libs: [
+    "services",
+  ],
+  optimize: {
+    enabled: false,
+  },
+  aidl: {
+    local_include_dirs: ["src/aidl"],
+  },
+  srcs: [
+    "src/java/com/ihor/helloservice/IHelloServiceInterfaceImpl.java",
+    "src/java/com/ihor/helloservice/HelloServiceManager.java",
+    "src/java/com/ihor/helloservice/HelloService.java",
+  ] + ["src/aidl/**/I*.aidl"],
 }
