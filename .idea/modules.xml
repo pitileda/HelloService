@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+    <component name="ProjectModuleManager">
+        <modules>
+            <module fileurl="file:///$PROJECT_DIR$/HelloSystem.iml" filepath="$PROJECT_DIR$/HelloSystem.iml" />
+            <module fileurl="file:///$PROJECT_DIR$/dependencies.iml" filepath="$PROJECT_DIR$/dependencies.iml" />
+            <module fileurl="file:////home/oem/work/aosp/frameworks/base/framework_srcjars.iml" filepath="/home/oem/work/aosp/frameworks/base/framework_srcjars.iml" />
+            <module fileurl="file:////home/oem/work/aosp/vendor/ihor/packages/HelloSystem/HelloSystem.iml" filepath="/home/oem/work/aosp/vendor/ihor/packages/HelloSystem/HelloSystem.iml" />
+
+        </modules>
+    </component>
+</project>

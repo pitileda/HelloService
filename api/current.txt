@@ -1,0 +1,41 @@
+// Signature format: 2.0
+package com.ihor.helloservice {
+
+  public class HelloService extends android.app.Service {
+    ctor public HelloService();
+    method public android.os.IBinder onBind(android.content.Intent);
+  }
+
+  public class HelloServiceManager {
+    ctor public HelloServiceManager();
+    method public static com.ihor.helloservice.HelloServiceManager getInstance();
+    method public boolean max(int, int);
+  }
+
+  public interface IHelloServiceInterface extends android.os.IInterface {
+    method public boolean max(int, int) throws android.os.RemoteException;
+    field public static final String DESCRIPTOR = "com.ihor.helloservice.IHelloServiceInterface";
+  }
+
+  public static class IHelloServiceInterface.Default implements com.ihor.helloservice.IHelloServiceInterface {
+    ctor public IHelloServiceInterface.Default();
+    method public android.os.IBinder asBinder();
+    method public boolean max(int, int) throws android.os.RemoteException;
+  }
+
+  public abstract static class IHelloServiceInterface.Stub extends android.os.Binder implements com.ihor.helloservice.IHelloServiceInterface {
+    ctor public IHelloServiceInterface.Stub();
+    method public android.os.IBinder asBinder();
+    method public static com.ihor.helloservice.IHelloServiceInterface asInterface(android.os.IBinder);
+    method public static com.ihor.helloservice.IHelloServiceInterface getDefaultImpl();
+    method public boolean onTransact(int, android.os.Parcel, android.os.Parcel, int) throws android.os.RemoteException;
+    method public static boolean setDefaultImpl(com.ihor.helloservice.IHelloServiceInterface);
+  }
+
+  public class IHelloServiceInterfaceImpl extends com.ihor.helloservice.IHelloServiceInterface.Stub {
+    ctor public IHelloServiceInterfaceImpl();
+    method public boolean max(int, int) throws android.os.RemoteException;
+  }
+
+}
+
